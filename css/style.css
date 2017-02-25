@@ -1,5 +1,72 @@
+.container {
+    max-width: 960px;
+    margin: auto;
+display: -webkit-flex;
+  display: flex;
+-webkit-flex-direction: column; /* Safari */
+  flex-direction: column;
+}
+.upper {
+    text-transform: uppercase;
+}
+.img-responsvie {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+main {
+}
+header {
+    height: 10vh;
+    background: aqua;
+}
+.inter {
+    height: 10vh;
+    background: beige;
+}
+.promo {
+    background: blue;
+}
+.info {
+    height: 10vh;
+    background: red;
+}
+.newsfeed {
+    height: 10vh;
+    background: yellow;
+}
+.offer {
+    background: red;
+}
+footer {
+    height: 10vh;
+    background: brown;
+    display: inline-flex;
+}
+.copy {
+    width: 20%;
+    border: solid 1px #000;
+    margin-left: auto;
+}
+.full-first {
+margin-left: calc(-50vw + 50%);
+   margin-right: calc(-50vw + 50%);
+ background: url("../img/strg_02.png") no-repeat center center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+.full-second {
+margin-left: calc(-50vw + 50%);
+   margin-right: calc(-50vw + 50%);
+ background: url("../img/strg_10.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 /* RWD */
-
 
 /* 20em (320px) */
 
