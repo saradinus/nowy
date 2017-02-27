@@ -1,53 +1,190 @@
+/* General */
 body {
     font-family: 'Roboto', sans-serif;
 }
 .container {
-    max-width: 960px;
+    max-width: 1024px;
     margin: auto;
 display: -webkit-flex;
   display: flex;
--webkit-flex-direction: column; /* Safari */
+-webkit-flex-direction: column;
   flex-direction: column;
 }
 a {
     text-decoration: none;
     color: black;
 }
+.bold {
+    font-weight: 700;
+}
 .upper {
     text-transform: uppercase;
 }
-.img-responsvie {
+.img-responsive {
     display: block;
     max-width: 100%;
     height: auto;
 }
-main {
-}
+/* Header & Nav */
 header {
-    height: 10vh;
-    background: aqua;
+display: inline-flex;
+    padding: 2vh 0vh;
 }
+nav {
+    text-align: right;
+}
+nav ul {
+        list-style: none;
+    display: inline-flex;
+}
+nav li:last-child {
+        border-right: 1px solid #d3d3d3;
+}
+nav li a {
+    color: #5481AC;
+}
+/* Inter */
 .inter {
     height: 10vh;
     background: beige;
 }
+/* Promo */
 .promo {
-    background: blue;
+    color: white;
 }
-.info {
-    height: 10vh;
-    background: red;
+.promo h1 {
+    padding-top: 9vh;
+    font-weight: 400;
+    margin-bottom: 2vh;
+}
+.promo h1 span {
+    display: block;
+}
+.searchbar {
+    background: #e5bb00;
+    border: #ffd401 2px solid;
+    opacity: 0.8;
+    padding: 2vh 2vw 2vh 3vw;
+    border-bottom-left-radius: 2em;
+    border-top-left-radius: 2em;
+    min-width: 32%;
+}
+.searchbar::placeholder,  {
+    opacity: 1;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2em;
+
+}
+.searchbar::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    opacity: 1;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.searchbar::-moz-placeholder { /* Firefox 19+ */
+    opacity: 1;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.search {
+background: #ffd001; /* Old browsers */
+background: -moz-linear-gradient(top, #ffd001 0%, #ffcc42 50%, #ffbb00 85%, #ffbe02 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffd001 0%,#ffcc42 50%,#ffbb00 85%,#ffbe02 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffd001 0%,#ffcc42 50%,#ffbb00 85%,#ffbe02 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd001', endColorstr='#ffbe02',GradientType=0 ); /* IE6-9 */
+border: none;
+padding: 1.4vh 4vw 2vh 2vw;
+border-bottom-right-radius: 2em;
+border-top-right-radius: 2em;
+color: white;
+font-size: 1.2em;
+font-weight: 400;
+}
+.full-first {
+margin-left: calc(-50vw + 50%);
+   margin-right: calc(-50vw + 50%);
+ background: url("../img/strg_02.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    min-height: 480px;
+    background-attachment: local;
+}
+/* Info & News */
+.info h2 {
+    color: #0069C4;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.info-text {
+    margin-bottom: 2vh;
+    font-size: 0.9em;
+    text-align: justify;
+    line-height: 1.5;
+    color: #4f4f4f;
 }
 .newsfeed {
-    height: 10vh;
-    background: yellow;
+    color: white;
+    position: relative;
 }
+.news-inner {
+ background: #0069C4;
+}
+.news-inner h2 {
+    font-weight: 400;
+    margin-bottom: 1vh;
+}
+.news-text h3
+{
+    font-size: 1em;
+}
+.news-text p {
+    font-size: 0.8em;
+}
+.checkmore {
+    background: #FED201;
+    border: none;
+    padding: 0vh 2vw;
+    border-radius: 1vw;
+}
+.news-text a button {
+        color: #0069C4;
+}
+.older-news {
+    background-color: #003E8B;
+    font-size: 0.8em;
+    padding: 2vh 2.5vw;
+    bottom: 0px;
+}
+.older-news a {
+    color: white;
+}
+.arrow {
+    margin-left: 1vw;
+display: inline-flex;
+}
+/* Offer */
 .offer {
 }
 .btn-yellow {
    gradient: #FFD101
 #FFC801;
 }
+.full-second {
+margin-left: calc(-50vw + 50%);
+   margin-right: calc(-50vw + 50%);
+ background: url("../img/strg_10.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    background-attachment: local;
+}
+/* Footer */
 footer {
     color: #858585;
     margin: 2vh 0vh;
@@ -70,29 +207,36 @@ display: inline-flex;
     padding: 0;
 }
 
-.full-first {
-margin-left: calc(-50vw + 50%);
-   margin-right: calc(-50vw + 50%);
- background: url("../img/strg_02.png") no-repeat center center fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-}
-.full-second {
-margin-left: calc(-50vw + 50%);
-   margin-right: calc(-50vw + 50%);
- background: url("../img/strg_10.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 /* RWD */
 
 /* 20em (320px) */
 
 @media only screen and (min-width : 20em) {
+      nav li {
+    border-left: 1px solid #d3d3d3;
+    padding: 1vh;
+    font-size: 0.7em;
+}
+    .promo {
+margin: 0vh 2vw;
+}
+        .promo h1 {
+            font-size: 2em;
+    }
+    main {
+            margin-bottom: 5vh;
+    }
+    .info {
+margin-top: 2vh;
+width: 100%;
+}
+    .newsfeed {
+width: 100%;
+}
+    .news-inner {
+        padding: 2vh 2.5vw 2vh 2.5vw;
+        margin-top: 1vh;
+}
     footer {
         display: flex;
         flex-direction: column;
@@ -111,6 +255,7 @@ margin-left: calc(-50vw + 50%);
 font-size: 0.75em;
     }
 }
+
 
 /* 30em (480px)  */
 
@@ -146,6 +291,34 @@ width: 40%;
 /* 56.25em (900px) */
 
 @media only screen and (min-width : 56.25em) {
+   nav li {
+    font-size: 0.9em;
+}
+    .promo {
+    margin: auto;
+}
+    .promo h1 {
+            font-size: 3em;
+    }
+main {
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    display: flex;
+    }
+.info {
+margin-top: 2vh;
+width: 60%;
+}
+    .newsfeed {
+margin-left: 5vw;
+width: 40%;
+    margin-top: -3.75vh;
+}
+    .news-inner {
+        padding: 1vh 2.5vw 2vh 1.5vw;
+        margin-top: 0;
+}
+}
           .footer-ul li {
     font-size: 1em;
               margin-right: 0.5vh;
