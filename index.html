@@ -7,14 +7,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="shortcut icon" href="favicon.ico" type="image/png">
+    <link rel="stylesheet" href="css/responsive-nav.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="container">
     <header>
-        <img src="img/logo.png" class="img-responsive logo">
-        <nav>
+        <img src="img/logo.png" class="img-responsive logo" alt="logo Selement">
+            <nav class="nav-collapse">
         <ul>
         <li><a href="#">Strona główna</a></li>
         <li><a href="#">Aktualności</a></li>
@@ -22,10 +23,15 @@
         <li><a href="#">Oferta</a></li>
         <li><a href="#">Kontakt</a></li>
         </ul>
-        </nav>
+    </nav>
     </header>
     <section>
-    <div class="inter"></div>
+    <div class="inter-line">
+    <div class="inter container">
+        <div class="inter-right"><h3>Zarezerwuj pobyt już dziś</h3><img src="img/selment_14.png" class="img-responsive contact"><h3><a href="mailto:biuro@selement.pl">biuro@selement.pl</a></h3><img src="img/selment_16.png" class="img-responsive contact"><h3>129 338 143</h3></div>
+    </div>
+    </div>
+        <div class="inter-social"><img src="img/selment_29.png" class="img-responsive social" alt="google social icon"><img src="img/selment_31.png" class="img-responsive social" alt="twitter social icon"><img src="img/selment_33.png" class="img-responsive social" alt="facebook social icon"></div>
     <div class="full-first">
     <div class="promo container">
         <h1>Wybierz się na wymarzone wakacje<span>z naszym biurem</span></h1>
@@ -68,15 +74,47 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet nisl ligula
 
     </main>
     <div class="full-second">
-    <div class="offer container">
+    <div class="container">
     <h2 class="upper"><span class="offer-yellow">Oferty</span> specjalne</h2>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-    <button class="btn-yellow upper"><a href="#">Zobacz wszystkie oferty</a></button>
+    <div class="offer">
+        <div class="col">
+        <img src="http://placehold.it/340x180" class="img-responsive">
+        <div class="col-inner">
+        <h2>Wakacje w Chorwacji</h2>
+        <p>Termin: od 02.03.2015 do: 12.03.2015</p>
+            <h3 class="price"><span>2000 zł</span> / netto</h3><a href="#"><button class="btn-yellow-small">szczegóły</button></a></div></div>
+<div class="col">
+        <img src="http://placehold.it/340x180" class="img-responsive">
+        <div class="col-inner">
+        <h2>Wakacje w Chorwacji</h2>
+        <p>Termin: od 02.03.2015 do: 12.03.2015</p>
+        <h3 class="price"><span>2000 zł</span> / netto</h3> <a href="#"><button class="btn-yellow-small">szczegóły</button></a></div></div>
+        <div class="col">
+        <img src="http://placehold.it/340x180" class="img-responsive">
+        <div class="col-inner">
+        <h2>Wakacje w Chorwacji</h2>
+        <p>Termin: od 02.03.2015 do: 12.03.2015</p>
+            <h3 class="price"><span>2000 zł</span> / netto</h3><a href="#"><button class="btn-yellow-small">szczegóły</button></a></div></div>
+        <div class="col">
+        <img src="http://placehold.it/340x180" class="img-responsive">
+        <div class="col-inner">
+        <h2>Wakacje w Chorwacji</h2>
+        <p>Termin: od 02.03.2015 do: 12.03.2015</p>
+            <h3 class="price"><span>2000 zł</span> / netto</h3> <a href="#"><button class="btn-yellow-small">szczegóły</button></a></div></div>
+        <div class="col">
+        <img src="http://placehold.it/340x180" class="img-responsive">
+        <div class="col-inner">
+        <h2>Wakacje w Chorwacji</h2>
+        <p>Termin: od 02.03.2015 do: 12.03.2015</p>
+            <h3 class="price"><span>2000 zł</span> / netto</h3><a href="#"><button class="btn-yellow-small">szczegóły</button></a></div></div>
+        <div class="col">
+        <img src="http://placehold.it/340x180" class="img-responsive">
+        <div class="col-inner">
+        <h2>Wakacje w Chorwacji</h2>
+        <p>Termin: od 02.03.2015 do: 12.03.2015</p>
+            <h3 class="price"><span>2000 zł</span> / netto</h3> <a href="#"><button class="btn-yellow-small">szczegóły</button></a></div></div>
+    </div>
+    <a href="#" class="link-yellow"><button class="btn-yellow upper">Zobacz wszystkie oferty</button></a>
     </div>
     </div>
     </section>
@@ -94,7 +132,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet nisl ligula
         <span>Copyright &copy; Selement, Projekt i wykonanie: Freeline.pl</span></div>
     </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/hamburger.js"></script>
+        <script>
+      var navigation = responsiveNav(".nav-collapse", {
+        animate: true,                    // Boolean: Use CSS3 transitions, true or false
+        transition: 284,                  // Integer: Speed of the transition, in milliseconds
+        label: "Menu",                    // String: Label for the navigation toggle
+        insert: "after",                  // String: Insert the toggle before or after the navigation
+        customToggle: "",                 // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative",              // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+        init: function(){},               // Function: Init callback
+        open: function(){},               // Function: Open callback
+        close: function(){}               // Function: Close callback
+      });
+    </script>
 </body>
 </html>
